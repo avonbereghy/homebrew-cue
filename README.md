@@ -6,15 +6,16 @@ real-time menu-bar monitor for Claude Code sessions (macOS).
 ## Install
 
 ```sh
-brew install --cask avonbereghy/cue/cue
-```
-
-That one command taps this repo and installs the latest Cue. Equivalently:
-
-```sh
 brew tap avonbereghy/cue
+brew trust avonbereghy/cue   # Homebrew 6.0+ only — see note below
 brew install --cask cue
 ```
+
+> **`brew trust`** — Homebrew 6.0+ refuses to load casks from third-party taps
+> until you explicitly trust them (a one-time security prompt). If you're on an
+> older Homebrew this step is unnecessary and `brew install --cask avonbereghy/cue/cue`
+> works on its own. If you skip it on 6.0+, the install will stop and print the
+> exact `brew trust` command to run.
 
 ### First launch (Gatekeeper)
 

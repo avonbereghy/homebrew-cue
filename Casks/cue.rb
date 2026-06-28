@@ -13,7 +13,7 @@ cask "cue" do
   # Cue updates itself in place via the Tauri updater, so Homebrew should not try
   # to manage upgrades; it only delivers the initial install.
   auto_updates true
-  depends_on macos: :big_sur
+  depends_on macos: :sonoma
 
   app "Cue.app"
 
