@@ -1,9 +1,9 @@
 cask "cue" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.7.0"
-  sha256 arm:   "cdb29f52033b40b37b330309393045952e5b576e614ed8ca3ada0c2640a3f0f2",
-         intel: "0346871227da65510e169168fcb75d833065ce6a2467aa4c223aab59af79909f"
+  version "0.7.1"
+  sha256 arm:   "58d8670f424bea92f72f14ff49f6c3a7d7ed6ad6237b1c78a52dab8a4e2577ff",
+         intel: "aecc596f7d313c2f73b0bcde6bc27069b9c6fdd0cde695db3d116f1865864620"
 
   url "https://github.com/avonbereghy/cue/releases/download/v#{version}/Cue_#{version}_#{arch}.dmg"
   name "Cue"
